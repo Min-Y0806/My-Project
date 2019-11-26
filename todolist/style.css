@@ -1,0 +1,61 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: content-box;
+}
+
+body {
+  background: linear-gradient(
+    to left,
+    rgb(138, 194, 138) 30%,
+    lightgreen 65%,
+    skyblue 90%
+  );
+}
+#removeBtn,
+#doneBtn {
+  background: brown;
+  padding: 7px;
+  position: absolute;
+  top: 5px;
+}
+
+#doneBtn {
+  left: 93%;
+  margin: 0 10px;
+}
+#removeBtn {
+  left: 88%;
+}
+li input[type="button"] {
+  text-align: end;
+}
+
+#uncomplete {
+  text-decoration: none;
+}
+
+#taskthing {
+  padding: 10px;
+  margin: 5px 0;
+  border: 1px solid blue;
+  width: 100%;
+  position: relative;
+}
+
+header {
+  text-align: center;
+}
+
+header input {
+  width: 90%;
+  height: 40px;
+  text-align: center;
+  font-size: 18px;
+}
+
+header input + button {
+  height: 20px;
+  padding: 5px 0px;
+  width: 90%;
+}
