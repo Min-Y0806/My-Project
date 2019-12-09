@@ -1,0 +1,26 @@
+(function printnow() {
+  const today = new Date();
+  const weeklist = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
+  const weekday = weeklist[today.getDay()];
+  const year = today.getFullYear();
+  const month = today.getMonth();
+  const date = today.getDate();
+  let hour = today.getHours();
+  let minute = today.getMinutes();
+  let second = today.getSeconds();
+  minute = minute < 10 ? "0" + minute : minute;
+  second = second < 10 ? "0" + second : second;
+  let em = document.createElement("em");
+  em.textContent = weekday;
+  em.setAttribute("id", "weekday");
+  nowdate = year + " " + month + " " + " " + date + " ";
+  nowtime = hour + ":" + minute + ":" + second;
+  var htmldate = document.getElementById("date");
+  var htmltime = document.getElementById("time");
+  htmldate.textContent = nowdate;
+  htmldate.appendChild(em);
+  htmltime.textContent = nowtime;
+  console.log(nowdate);
+  console.log(nowtime);
+  setTimeout(printnow, 1000);
+})();
