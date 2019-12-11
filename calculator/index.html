@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <input type="text" class="bar formulation" id="formu" placeholder="0" />
+      <input type="text" class="bar result" id="result" />
+
+      <div class="numbers">
+        <li>
+          <input type="button" value="c" id="clearBtn" />
+          <input type="button" value="()" id="brackets" />
+          <input type="button" value="%" id="percent" />
+          <input type="button" value="/" id="divide" />
+        </li>
+        <li>
+          <input type="button" value="7" />
+          <input type="button" value="8" />
+          <input type="button" value="9" />
+          <input type="button" value="+" />
+        </li>
+        <li>
+          <input type="button" value="4" />
+          <input type="button" value="5" />
+          <input type="button" value="6" />
+          <input type="button" value="-" id="minus" />
+        </li>
+        <li>
+          <input type="button" value="1" />
+          <input type="button" value="2" />
+          <input type="button" value="3" />
+          <input type="button" value="x" id="multiple" />
+        </li>
+        <li>
+          <input type="button" value="+/-" id="porm" />
+          <input type="button" value="0" />
+          <input type="button" value="." id="point" />
+          <input type="button" value="=" id="equal" />
+        </li>
+      </div>
+    </div>
+    <script src="jquery.1.js"></script>
+    <script src="calc.js"></script>
+  </body>
+</html>
